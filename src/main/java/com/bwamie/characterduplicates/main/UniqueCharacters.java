@@ -9,9 +9,9 @@ public class UniqueCharacters {
 		private Set<Character> unique;
 		private Set<Character> common;
 
-		public Pair(Set<Character> s1, Set<Character> s2) {
-			this.unique = s1;
-			this.common = s2;
+		public Pair(Set<Character> unique, Set<Character> common) {
+			this.unique = unique;
+			this.common = common;
 		}
 
 		public Pair() {
@@ -39,8 +39,8 @@ public class UniqueCharacters {
 
 	public static void main(String args[]) {
 		Pair result = uniqueChars("abcabcxyz");
-		System.out.println("Unique: "+ stringfry(result.getUnique()));
-		System.out.println("Duplicate: "+stringfry(result.getCommon()));
+		System.out.println("Unique: "+ stringfy(result.getUnique()));
+		System.out.println("Duplicate: "+stringfy(result.getCommon()));
 	}
 
 	public static Pair uniqueChars(String s) {
@@ -58,7 +58,7 @@ public class UniqueCharacters {
 		return p;
 	}
 	
-	public static String stringfry(Set<Character> chrs){
+	public static String stringfy(Set<Character> chrs){
 		StringBuilder sb = new StringBuilder();
 		 chrs.forEach(s->{sb.append(s);});
 		 System.out.println(sb.toString());
