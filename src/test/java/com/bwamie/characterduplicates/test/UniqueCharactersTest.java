@@ -2,15 +2,10 @@ package com.bwamie.characterduplicates.test;
 
 import static org.junit.Assert.assertEquals;
 
-import java.util.List;
-import java.util.LinkedHashSet;
-import java.util.LinkedList;
-import java.util.Set;
-
-import com.bwamie.characterduplicates.main.*;
-import com.bwamie.characterduplicates.main.UniqueCharacters.Pair;
-
 import org.junit.Test;
+
+import com.bwamie.characterduplicates.main.UniqueCharacters;
+import com.bwamie.characterduplicates.main.UniqueCharacters.Pair;
 
 public class UniqueCharactersTest {
 
